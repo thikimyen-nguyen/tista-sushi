@@ -1,11 +1,11 @@
 import { Layout } from "../Layout";
 import { Routes, Route } from "react-router-dom";
 import { ContactForm } from "../ContactForm";
-import { Cover } from "../Cover";
 import CheckoutSuccess from "../CheckoutMessage";
+import HomePageContent from "../HomePage";
 
 function HomePage() {
-  return <Cover />;
+  return <HomePageContent />;
 }
 function ContactPage() {
   return <ContactForm />;

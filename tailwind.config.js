@@ -7,12 +7,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      'primary': '#D34004',
+      'primary': '#D73800',
       'black': '#181818',
       'white': '#ffffff',
       'orange': '#FC8454',
       'gray': '#262522',
-      'hover': '#FFDE85',
+      'lightOrange': '#FCC6B0',
       'green': '#84E686',
     },
     extend: {

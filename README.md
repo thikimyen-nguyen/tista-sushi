@@ -10,3 +10,6 @@
 <a href="https://www.freepik.com/free-ai-image/highly-detailed-seafood-sushi-dish-with-simple-black-background_152606231.htm#fromView=search&page=1&position=23&uuid=2c557d40-f6ea-449e-9bbb-402c41c816d0">Image by freepik</a>
 <a href="https://www.freepik.com/free-ai-image/highly-detailed-seafood-sushi-dish-with-simple-black-background_152606136.htm#fromView=search&page=1&position=12&uuid=2c557d40-f6ea-449e-9bbb-402c41c816d0">Image by freepik</a>
 <a href="https://www.freepik.com/free-ai-image/seafood-sushi-dish-with-details-simple-black-background_152607070.htm#fromView=search&page=1&position=2&uuid=515d6cec-baf6-42d8-b79b-bafafeee81ca">Image by freepik</a>
+
+Icons at<a href="https://icon-sets.iconify.design/">Iconify</a>
+

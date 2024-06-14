@@ -41,6 +41,9 @@ module.exports = {
           '0%': { transform: 'translateX(100px)', opacity: 0 },
           '100%': { transform: 'translateX(0)', opacity: 1 },
         },
+        spin: {
+          to: { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         zoomIn: 'zoomIn 15s ease-in-out infinite',
@@ -49,6 +52,7 @@ module.exports = {
         slideInUp: 'slideInUp 1s ease-out',
         slideInLeft: 'slideInLeft 1s ease-out',
         slideInRight: 'slideInRight 1s ease-out',
+        spin: 'spin 15s linear infinite',
       },
     },
   },

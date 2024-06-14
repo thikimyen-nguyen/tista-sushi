@@ -33,3 +33,18 @@ h2 {
   border: solid 2px red;
 }
 
+.animation-slideInUp, .animation-slideInLeft, .animation-slideInRight {
+  opacity: 0;
+}
+
+.animate .animation-slideInUp {
+  animation: slideInUp 1s ease-out forwards;
+}
+
+.animate .animation-slideInLeft {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate .animation-slideInRight {
+  animation: slideInRight 1s ease-out forwards;
+}

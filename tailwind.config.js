@@ -3,17 +3,15 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      'primary': '#D73800',
-      'black': '#181818',
-      'white': '#ffffff',
-      'orange': '#FC8454',
-      'gray': '#262522',
-      'lightOrange': '#FCC6B0',
-      'green': '#84E686',
+      primary: '#D73800',
+      black: '#181818',
+      white: '#ffffff',
+      orange: '#FC8454',
+      gray: '#262522',
+      lightOrange: '#FFDDD1',
+      green: '#84E686',
     },
     extend: {
       keyframes: {
@@ -27,17 +25,35 @@ module.exports = {
           '50%': { transform: 'scale(0.8)' },
           '100%': { transform: 'scale(1)' },
         },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideInUp: {
+          '0%': { transform: 'translateY(100px)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100px)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100px)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
       },
       animation: {
         zoomIn: 'zoomIn 15s ease-in-out infinite',
         zoomOut: 'zoomOut 15s ease-in-out infinite',
+        fadeIn: 'fadeIn 1s ease-out',
+        slideInUp: 'slideInUp 1s ease-out',
+        slideInLeft: 'slideInLeft 1s ease-out',
+        slideInRight: 'slideInRight 1s ease-out',
       },
     },
-    
   },
   variants: {
     extend: {},
   },
   plugins: [],
 }
-

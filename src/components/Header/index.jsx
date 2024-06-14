@@ -10,6 +10,9 @@ export function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  function handleOrderButton() {
+    window.location.href = "https://tista-sushi.vercel.app/no/welcome"
+  }
   return (
     <header className="text-white p-4 sticky top-0 bg-black z-10 ">
       <div className="  max-w-screen-xl mx-auto">
@@ -19,7 +22,7 @@ export function Header() {
           </Link>
           <div className="flex content-center">
             <div className="self-center">
-              <PrimaryButton label="Order Online" />
+              <PrimaryButton label="ORDER NOW" onClick={handleOrderButton}/>
             </div>
             <nav>
               <ul className="p-4 hidden md:flex" id="navbar">

@@ -1,5 +1,4 @@
 import { IntroCard } from "./card";
-import imageA from "../../../assets/images/seafood-sushi-dish-with-details-simple-black-background (1).jpg";
 import { SecondaryButton } from "../../Buttons";
 import imageB from "../../../assets/images/removebg2.png";
 import imageC from "../../../assets/images/bgremove.png";

@@ -1,6 +1,6 @@
-import { Cover, CoverOne, CoverThree, CoverTwo, MainCover } from "./Cover";
+import { CoverThree, CoverTwo, MainCover } from "./Cover";
 import { Intro } from "./Intro";
-import { Gallery, Review } from "./Review";
+import { Gallery } from "./Review";
 
 export default function HomePageContent() {
   return (

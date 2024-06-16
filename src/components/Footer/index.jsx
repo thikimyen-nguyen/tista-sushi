@@ -6,7 +6,7 @@ export function Footer() {
     window.location.href = "https://tista-sushi.vercel.app/no/welcome";
   }
   return (
-    <footer className="text-center bg-lightOrange text-black">
+    <footer className="text-center bg-lightOrange text-black pt-16">
       <a href="/">
         {" "}
         <img src={logo} alt="holidaze logo" className="w-64 m-auto" />

@@ -3,6 +3,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { PrimaryButton } from "../Buttons";
 import { useState } from "react";
+import image3 from "../../assets/images/removebg.png";
+
 const schema = yup
   .object({
     fullName: yup
@@ -41,8 +43,8 @@ export function ContactForm() {
   }
 
   return (
-    <div>
-      <h1 className="text-center">Contact Form</h1>
+    <div className="my-5 p-3">
+      <h1 className="text-center">Contact Us</h1>
       {submitSuccess && (
         <p className="text-black bg-green p-1">
           Your message was sent successfully!
@@ -102,7 +104,7 @@ export function ContactForm() {
         </div>
         <div className="mb-4">
           <label htmlFor="body" className="block font-semibold">
-            Body
+            Your Message
           </label>
           <textarea
             id="body"
@@ -118,6 +120,20 @@ export function ContactForm() {
           <PrimaryButton label="Submit" />
         </div>
       </form>
+    </div>
+  );
+}
+export function ContactCover() {
+  return (
+    <div className="relative h-56 sm:h-80 md:h-96 overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div>
+          <img src={image3} alt="sushi maki roll" className="w-3/4 animate-spin m-auto" />
+        </div>
+        <div className="text-2xl text-orange font-styling text-center p-3">
+          We love to hear from you!
+        </div>
+      </div>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export function Header() {
     setIsOpen(!isOpen);
   };
   function handleOrderButton() {
-    window.location.href = "https://tista-sushi.vercel.app/no/welcome"
+    window.location.href = "https://tista-sushi.orderintelligence.no/";
   }
   return (
     <header className="text-white p-4 sticky top-0 bg-black z-10 ">
@@ -28,6 +28,9 @@ export function Header() {
               <ul className="p-4 hidden md:flex" id="navbar">
                 <li className="p-4 text-xl">
                   <NavLink to="/">HOME</NavLink>
+                </li>
+                <li className="p-4 text-xl">
+                  <NavLink to="/about">ABOUT US</NavLink>
                 </li>
                 <li className="p-4 text-xl">
                   <NavLink to="/contact">CONTACT</NavLink>
@@ -65,6 +68,9 @@ export function Header() {
             <li className="p-4 text-xl">
               <NavLink to="/">HOME</NavLink>
             </li>
+            <li className="p-4 text-xl">
+                  <NavLink to="/about">ABOUT US</NavLink>
+                </li>
             <li className="p-4 text-xl">
               <NavLink to="/contact">CONTACT</NavLink>
             </li>

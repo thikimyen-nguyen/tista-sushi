@@ -2,7 +2,6 @@ import Banner from "../../../assets/images/cover.jpg";
 import "./index.css";
 import BannerTwo from "../../../assets/images/hinh3.webp";
 import image2 from "../../../assets/images/sushidishbgremove.png";
-import image3 from "../../../assets/images/removebg.png";
 import { SecondaryButton } from "../../Buttons";
 
 export function MainCover() {
@@ -22,7 +21,7 @@ export function MainCover() {
 }
 export function CoverTwo() {
   function handleOrderButton() {
-    window.location.href = "https://tista-sushi.vercel.app/no/welcome";
+    window.location.href = "https://tista-sushi.orderintelligence.no/";
   }
   return (
     <div className="relative h-screen">
@@ -32,7 +31,7 @@ export function CoverTwo() {
       ></div>
        <div className="absolute w-full top-10 flex items-center justify-center">
         {" "}
-        <h1 className="my-5 text-center font-bold">
+        <h1 className="my-5 text-center font-bold pt-5 font-styling">
           THE TASTE OF TRUE SUSHI!
         </h1>
        
@@ -57,16 +56,4 @@ export function CoverTwo() {
     </div>
   );
 }
-export function CoverThree() {
-  return (
-    <div className="relative h-screen">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img
-          src={image3}
-          alt="sushi maki roll"
-          className="max-w-full max-h-full animate-spin"
-        />
-      </div>
-    </div>
-  );
-}
+

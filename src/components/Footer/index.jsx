@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.webp";
 import { PrimaryButton } from "../Buttons";
 export function Footer() {
   function handleOrderButton() {
-    window.location.href = "https://tista-sushi.vercel.app/no/welcome";
+    window.location.href = "https://tista-sushi.orderintelligence.no/";
   }
   return (
     <footer className="text-center bg-lightOrange text-black pt-16">
@@ -14,11 +14,11 @@ export function Footer() {
       <nav>
         <ul className="flex justify-center">
           <li className="p-4 hover:underline">
-            <NavLink to="/contact">About Us</NavLink>
+            <NavLink to="/about">About Us</NavLink>
           </li>
-          <li className="p-4 hover:underline hover:text-primary">
+          {/* <li className="p-4 hover:underline hover:text-primary">
             <NavLink to="/contact">Gallery</NavLink>
-          </li>
+          </li> */}
           <li className="p-4 hover:underline">
             <NavLink to="/contact">Contact</NavLink>
           </li>

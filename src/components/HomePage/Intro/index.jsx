@@ -3,7 +3,9 @@ import { SecondaryButton } from "../../Buttons";
 import imageB from "../../../assets/images/removebg2.png";
 import imageC from "../../../assets/images/bgremove.png";
 export function Intro() {
-  
+  function handleOrderButton() {
+    window.location.href = "https://tista-sushi.orderintelligence.no/";
+  }
   return (
     <section>
       <div className="bg-lightOrange flex flex-wrap justify-center py-32">
@@ -70,24 +72,24 @@ export function Intro() {
           content="A variety of vegetable-based sushi rolls and dishes."
         />
       </div>
-      <div className="m-5 md:flex items-center justify-evenl">
-        <div className="w-full xl:w-1/2">
-          <img src={imageB} alt="sushi roll maki" />
+      <div className="m-5 md:flex items-center ">
+        <div className="w-full xl:w-1/2 ">
+          <img src={imageB} alt="sushi roll maki" className="m-auto"/>
         </div>
         <div className="text-center p-5">
           <h1 className="my-5">Crazy for Sushi!</h1>
           <p className="text-lg my-5 p-5 leading-9">
-            Step into a culinary adventure at our sushi restaurant, where
+            Step into a culinary adventure at Tista Sushi, where
             quality is paramount and every detail is meticulously crafted.
             Discover the finest specialties prepared with care and precision,
             promising a dining experience you won't soon forget.
           </p>
           <div className="my-5">
-            <SecondaryButton label="Read more" />
+            <SecondaryButton label="See our Menu" onClick={handleOrderButton}/>
           </div>
         </div>
-        <div className="w-full xl:w-1/2 ">
-          <img src={imageC} alt="sushi roll maki" />
+        <div className="w-full xl:w-1/2 text-center">
+          <img src={imageC} alt="sushi roll maki" className="m-auto" />
         </div>
       </div>
     </section>

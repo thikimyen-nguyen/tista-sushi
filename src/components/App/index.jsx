@@ -1,6 +1,6 @@
 import { Layout } from "../Layout";
 import { Routes, Route } from "react-router-dom";
-import { ContactForm } from "../ContactForm";
+import { ContactCover, ContactForm } from "../ContactForm";
 import CheckoutSuccess from "../CheckoutMessage";
 import HomePageContent from "../HomePage";
 import { useEffect } from "react";
@@ -9,28 +9,32 @@ function HomePage() {
   return <HomePageContent />;
 }
 function ContactPage() {
-  return <ContactForm />;
+  return (
+    <div>
+      <ContactCover />
+      <ContactForm />
+    </div>
+  );
 }
 
 function AboutPage() {
   return <CheckoutSuccess />;
 }
 
-
 function App() {
   useEffect(() => {
     const handleScroll = () => {
-      document.querySelectorAll('.animate-on-scroll').forEach(element => {
+      document.querySelectorAll(".animate-on-scroll").forEach((element) => {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight) {
-          element.classList.add('animate');
+          element.classList.add("animate");
         }
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Run on mount
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <div className="bg-black ">
@@ -38,7 +42,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path="checkoutSuccess" element={<AboutPage />} />
+          <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
     </div>

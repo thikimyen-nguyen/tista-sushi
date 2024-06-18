@@ -18,7 +18,7 @@ export function Header() {
       <div className="  max-w-screen-xl mx-auto">
         <div className="flex justify-between">
           <Link to="/" className="self-center">
-            <img src={logo} alt="Bshop Logo" className="w-36" />
+            <img src={logo} alt="Bshop Logo" className="w-36 md:w-56" />
           </Link>
           <div className="flex content-center">
             <div className="self-center">

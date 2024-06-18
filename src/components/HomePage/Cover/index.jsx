@@ -31,16 +31,17 @@ export function CoverTwo() {
       ></div>
        <div className="absolute w-full top-10 flex items-center justify-center">
         {" "}
-        <h1 className="my-5 text-center font-bold pt-5 font-styling">
+        <h1 className="my-5 text-center pt-10 ">
           THE TASTE OF TRUE SUSHI!
         </h1>
        
       </div>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center top-44">
         <img
           src={image2}
           alt="tista sushi maki roll"
-          style={{ width: "600px" }}
+          style={{ width: "400px" }}
+          className="animate-zoomIn"
         />
       </div>
       <div className="absolute w-full bottom-16 flex flex-col items-center justify-center">

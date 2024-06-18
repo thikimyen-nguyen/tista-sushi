@@ -1,3 +1,9 @@
 #navbar a.active {
     color: #FC8454;
   }
+  #navbar a:hover {
+    background-color: #FCC6B0;
+    box-shadow: 0px 2px 10px 5px #FC8454;
+    color: black;
+   
+  }

@@ -20,13 +20,13 @@ export function Gallery() {
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${Banner})` }}
         ></div>
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-full md:w-3/4  top-36 flex-col items-center mx-auto">
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-full md:w-3/4  top-52 flex-col items-center mx-auto">
           {" "}
-          <p className="my-5 text-3xl text-center pt-5 font-styling">
+          <p className="my-5 text-3xl text-center pt-5 lg:w-3/4 mx-auto">
             Immerse yourself in an unforgettable dining experience, where every
             bite is a journey to the heart of Japan!
           </p>
-          <div className="text-center">
+          <div className="text-center mt-20">
             <SecondaryButton label="Online Order" />
           </div>
         </div>

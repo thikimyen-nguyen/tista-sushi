@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.webp";
 import { PrimaryButton } from "../Buttons";
 export function Footer() {

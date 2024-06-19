@@ -14,7 +14,7 @@ export function Header() {
     window.location.href = "https://tista-sushi.orderintelligence.no/";
   }
   return (
-    <header className="text-white p-4 sticky top-0 bg-black z-10 ">
+    <header className="text-white p-4 sticky top-0 bg-gray z-10 opacity-90 ">
       <div className="  max-w-screen-xl mx-auto">
         <div className="flex justify-between">
           <Link to="/" className="self-center">
@@ -22,7 +22,7 @@ export function Header() {
           </Link>
           <div className="flex content-center">
             <div className="self-center">
-              <PrimaryButton label="ORDER NOW" onClick={handleOrderButton}/>
+              <PrimaryButton label="ORDER NOW" onClick={handleOrderButton} />
             </div>
             <nav>
               <ul className="p-4 hidden md:flex" id="navbar">
@@ -30,10 +30,10 @@ export function Header() {
                   <NavLink to="/">HOME</NavLink>
                 </li>
                 <li className="p-4 text-xl">
-                  <NavLink to="/about">ABOUT US</NavLink>
+                  <a href="#about">ABOUT US</a>
                 </li>
                 <li className="p-4 text-xl">
-                  <NavLink to="/contact">CONTACT</NavLink>
+                  <a href="#contact">CONTACT</a>
                 </li>
               </ul>
             </nav>
@@ -69,10 +69,10 @@ export function Header() {
               <NavLink to="/">HOME</NavLink>
             </li>
             <li className="p-4 text-xl">
-                  <NavLink to="/about">ABOUT US</NavLink>
-                </li>
+              <a href="#about">ABOUT US</a>
+            </li>
             <li className="p-4 text-xl">
-              <NavLink to="/contact">CONTACT</NavLink>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </nav>

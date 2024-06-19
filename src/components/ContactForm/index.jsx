@@ -125,15 +125,11 @@ export function ContactForm() {
 }
 export function ContactCover() {
   return (
-    <div className="relative h-56 sm:h-80 md:h-96 overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div>
-          <img src={image3} alt="sushi maki roll" className="w-3/4 animate-spin m-auto" />
-        </div>
-        <div className="text-2xl text-orange font-styling text-center p-3">
+    <div className="h-56 sm:h-80 md:h-96 flex justify-center items-center my-10">
+        <img src={image3} alt="sushi maki roll" className="w-80 animate-spin" />
+        <div className="text-2xl text-orange font-styling text-start">
           We love to hear from you!
         </div>
-      </div>
     </div>
   );
 }

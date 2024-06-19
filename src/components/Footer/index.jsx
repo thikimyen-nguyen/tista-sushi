@@ -6,23 +6,23 @@ export function Footer() {
     window.location.href = "https://tista-sushi.orderintelligence.no/";
   }
   return (
-    <footer className="text-center bg-lightOrange text-black pt-16">
-      <a href="/">
+    <footer className="text-center bg-gray text-white">
+      <a href="/" >
         {" "}
-        <img src={logo} alt="holidaze logo" className="w-64 m-auto" />
+        <img src={logo} alt="holidaze logo" className="w-64 m-auto py-10" />
       </a>
       <nav>
         <ul className="flex justify-center">
           <li className="p-4 hover:underline">
-            <NavLink to="/about">About Us</NavLink>
+          <a href="#about">ABOUT US</a>
           </li>
          
           <li className="p-4 hover:underline">
-            <NavLink to="/contact">Contact</NavLink>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
       </nav>
-      <PrimaryButton label="Order Now" onClick={handleOrderButton} />
+      <PrimaryButton label="ORDER NOW" onClick={handleOrderButton} />
       <div className=" flex justify-center my-5">
         <div className="flex items-center p-2">
           <svg
@@ -53,7 +53,7 @@ export function Footer() {
           Walkers gate 4, 1771 Halden{" "}
         </div>
       </div>
-      <p className="my-5">&copy; 2024 Powered by <a class="email" href="mailto:contact@orderintelligence.no" className="text-primary underline">Order Intelligence</a></p>
+      <p className="my-5">&copy; 2024 Powered by <a class="email" href="mailto:contact@orderintelligence.no" className="text-primary hover:underline">Order Intelligence</a></p>
     </footer>
   );
 }

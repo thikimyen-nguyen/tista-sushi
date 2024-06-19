@@ -10,8 +10,10 @@ export default function HomePageContent() {
       <Intro />
       <CoverTwo />
       <Gallery />
-      <ContactCover />
-      <ContactForm />
+      <div id="contact">
+        <ContactCover />
+        <ContactForm />
+      </div>
     </div>
   );
 }

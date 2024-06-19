@@ -76,7 +76,7 @@ export function Intro() {
         <div className="w-full xl:w-1/2 ">
           <img src={imageB} alt="sushi roll maki" className="m-auto"/>
         </div>
-        <div className="text-center p-5">
+        <div className="text-center p-5" id="about">
           <h1 className="my-5">Crazy for Sushi!</h1>
           <p className="text-lg my-5 p-5 leading-9">
             Step into a culinary adventure at Tista Sushi, where

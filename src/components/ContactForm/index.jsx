@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { SecondaryButton } from "../Buttons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import image3 from "../../assets/images/removebg.png";
 
 const schema = yup
@@ -41,15 +41,18 @@ export function ContactForm() {
 
     setSubmitSuccess(true);
   }
+  useEffect(() => {
+    if (submitSuccess) {
+      window.alert('Your message was sent successfully!');
+      // Reset submitSuccess if needed
+      setSubmitSuccess(false);
+    }
+  }, [submitSuccess]);
 
   return (
     <div className="my-5 p-3">
       <h1 className="text-center">Contact Us</h1>
-      {submitSuccess && (
-        <p className="text-black bg-green p-1">
-          Your message was sent successfully!
-        </p>
-      )}
+      
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex-col md:w-2/4 content-center mx-auto"
@@ -117,7 +120,7 @@ export function ContactForm() {
           <p className="text-primary">{errors.body?.message}</p>
         </div>
         <div className="mt-4 text-center">
-          <SecondaryButton label="Submit" />
+          <SecondaryButton label="Send" />
         </div>
       </form>
     </div>

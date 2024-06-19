@@ -1,8 +1,9 @@
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from "emailjs-com";
 import { SecondaryButton } from "../Buttons";
-import { useEffect, useState } from "react";
 import image3 from "../../assets/images/removebg.png";
 
 const schema = yup
@@ -25,6 +26,7 @@ const schema = yup
       .required("Please enter your message."),
   })
   .required();
+
 export function ContactForm() {
   const {
     register,
@@ -35,16 +37,27 @@ export function ContactForm() {
     resolver: yupResolver(schema),
   });
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  function onSubmit(data) {
-    console.log(data);
-    reset();
 
-    setSubmitSuccess(true);
+  function onSubmit(data) {
+    emailjs
+      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSubmitSuccess(true);
+          reset();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          window.alert("ERROR! Could not send message. Please try again!");
+          reset();
+        }
+      );
   }
+
   useEffect(() => {
     if (submitSuccess) {
-      window.alert('Your message was sent successfully!');
-      // Reset submitSuccess if needed
+      window.alert("Your message was sent successfully!");
       setSubmitSuccess(false);
     }
   }, [submitSuccess]);
@@ -52,7 +65,6 @@ export function ContactForm() {
   return (
     <div className="my-5 p-3">
       <h1 className="text-center">Contact Us</h1>
-      
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex-col md:w-2/4 content-center mx-auto"
@@ -126,13 +138,14 @@ export function ContactForm() {
     </div>
   );
 }
+
 export function ContactCover() {
   return (
     <div className="h-56 sm:h-80 md:h-96 flex justify-center items-center my-10">
-        <img src={image3} alt="sushi maki roll" className="w-80 animate-spin" />
-        <div className="text-2xl text-orange font-styling text-start">
-          We love to hear from you!
-        </div>
+      <img src={image3} alt="sushi maki roll" className="w-80 animate-spin" />
+      <div className="text-2xl text-orange font-styling text-start">
+        We love to hear from you!
+      </div>
     </div>
   );
 }

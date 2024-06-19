@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { PrimaryButton } from "../Buttons";
+import { SecondaryButton } from "../Buttons";
 import { useState } from "react";
 import image3 from "../../assets/images/removebg.png";
 
@@ -117,7 +117,7 @@ export function ContactForm() {
           <p className="text-primary">{errors.body?.message}</p>
         </div>
         <div className="mt-4 text-center">
-          <PrimaryButton label="Submit" />
+          <SecondaryButton label="Submit" />
         </div>
       </form>
     </div>

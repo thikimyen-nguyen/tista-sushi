@@ -72,11 +72,11 @@ export function Intro() {
           content="A variety of vegetable-based sushi rolls and dishes."
         />
       </div>
-      <div className="m-5 md:flex items-center ">
+      <div className="m-5 md:flex items-center " id="about">
         <div className="w-full xl:w-1/2 ">
           <img src={imageB} alt="sushi roll maki" className="m-auto"/>
         </div>
-        <div className="text-center p-5" id="about">
+        <div className="text-center p-5" >
           <h1 className="my-5">Crazy for Sushi!</h1>
           <p className="text-lg my-5 p-5 leading-9">
             Step into a culinary adventure at Tista Sushi, where

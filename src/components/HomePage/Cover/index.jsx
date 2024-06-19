@@ -31,7 +31,7 @@ export function CoverTwo() {
       ></div>
        <div className="absolute w-full top-10 flex items-center justify-center">
         {" "}
-        <h1 className="my-5 text-center pt-10 ">
+        <h1 className="my-5 text-center pt-36 ">
           THE TASTE OF TRUE SUSHI!
         </h1>
        

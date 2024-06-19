@@ -1,19 +1,13 @@
-import Banner from "../../../assets/images/gallery.jpg";
+import Banner from "../../../assets/images/coverngang.jpg";
 import { SecondaryButton } from "../../Buttons";
-import { GalleryCard } from "./card";
-import image1 from "../../../assets/images/bgremovesushi/crazy-salmon-removebg-preview.png"
-import image2 from "../../../assets/images/bgremovesushi/bento-removebg-preview.png"
+import collage from "../../../assets/images/collage.webp";
+
 
 export function Gallery() {
   return (
-    <section>
-      <div>
-        <p className="text-3xl text-primary font-styling text-center my-20">OUR GALLERY</p>
-        <div>
-          <GalleryCard imageUrl={image1} name="Crazy Salmon Roll"/>
-          <GalleryCard imageUrl={image2} name="Bento"/>
-
-        </div>
+    <section >
+      <div className="flex lg:w-3/4 mx-auto my-10">
+        <img src={collage} alt="tista sushi maki nigiri roll" />
       </div>
       <div className="relative h-screen">
         <div

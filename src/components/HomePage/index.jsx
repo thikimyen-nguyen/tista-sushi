@@ -1,6 +1,7 @@
-import { CoverThree, CoverTwo, MainCover } from "./Cover";
+import { CoverTwo, MainCover } from "./Cover";
 import { Intro } from "./Intro";
 import { Gallery } from "./Gallery";
+import { ContactCover, ContactForm } from "../ContactForm";
 
 export default function HomePageContent() {
   return (
@@ -9,6 +10,8 @@ export default function HomePageContent() {
       <Intro />
       <CoverTwo />
       <Gallery />
+      <ContactCover />
+      <ContactForm />
     </div>
   );
 }

@@ -1,25 +1,14 @@
 import { Layout } from "../Layout";
 import { Routes, Route } from "react-router-dom";
-import { ContactCover, ContactForm } from "../ContactForm";
-import CheckoutSuccess from "../CheckoutMessage";
 import HomePageContent from "../HomePage";
 import { useEffect } from "react";
 
 function HomePage() {
   return <HomePageContent />;
 }
-function ContactPage() {
-  return (
-    <div>
-      <ContactCover />
-      <ContactForm />
-    </div>
-  );
-}
 
-function AboutPage() {
-  return <CheckoutSuccess />;
-}
+
+
 
 function App() {
   useEffect(() => {
@@ -41,8 +30,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
     </div>

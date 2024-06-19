@@ -16,9 +16,7 @@ export function Footer() {
           <li className="p-4 hover:underline">
             <NavLink to="/about">About Us</NavLink>
           </li>
-          {/* <li className="p-4 hover:underline hover:text-primary">
-            <NavLink to="/contact">Gallery</NavLink>
-          </li> */}
+         
           <li className="p-4 hover:underline">
             <NavLink to="/contact">Contact</NavLink>
           </li>
@@ -55,7 +53,7 @@ export function Footer() {
           Walkers gate 4, 1771 Halden{" "}
         </div>
       </div>
-      <p className="my-5">&copy; 2024 Tista Sushi. All rights reserved.</p>
+      <p className="my-5">&copy; 2024 Powered by <a class="email" href="mailto:contact@orderintelligence.no" className="text-primary underline">Order Intelligence</a></p>
     </footer>
   );
 }

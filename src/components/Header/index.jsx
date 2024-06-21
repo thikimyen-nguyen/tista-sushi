@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/images/logo.webp";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.css";
 import { PrimaryButton } from "../Buttons";
 

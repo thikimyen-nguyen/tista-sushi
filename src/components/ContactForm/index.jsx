@@ -40,7 +40,7 @@ export function ContactForm() {
 
   function onSubmit(data) {
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
+      .send("service_gpkyeng", "template_qgg4pin", data, "XHRxxVuzePZubZk48")
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);

@@ -26,9 +26,7 @@ export function Header() {
             </div>
             <nav>
               <ul className="p-4 hidden md:flex" id="navbar">
-                <li className="p-4 text-xl">
-                  <NavLink to="/">HOME</NavLink>
-                </li>
+               
                 <li className="p-4 text-xl">
                   <a href="#about">ABOUT US</a>
                 </li>
@@ -65,9 +63,7 @@ export function Header() {
       {isOpen && (
         <nav className="w-fit fixed right-4 text-end">
           <ul className="md:hidden bg-black p-4 w-fit" id="navbar">
-            <li className="p-4 text-xl">
-              <NavLink to="/">HOME</NavLink>
-            </li>
+           
             <li className="p-4 text-xl">
               <a href="#about">ABOUT US</a>
             </li>

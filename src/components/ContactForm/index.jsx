@@ -5,6 +5,7 @@ import * as yup from "yup";
 import emailjs from "emailjs-com";
 import { SecondaryButton } from "../Buttons";
 import image3 from "../../assets/images/removebg.png";
+import ReCAPTCHA from "react-google-recaptcha"; // Added import
 
 const schema = yup
   .object({
@@ -37,20 +38,38 @@ export function ContactForm() {
     resolver: yupResolver(schema),
   });
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null); // Added state for reCAPTCHA token
 
   function onSubmit(data) {
+    if (!recaptchaToken) {
+      // Check for reCAPTCHA token
+      window.alert("Please complete the reCAPTCHA");
+      return;
+    }
+
+    const templateParams = {
+      ...data,
+      "g-recaptcha-response": recaptchaToken, // Include reCAPTCHA token
+    };
     emailjs
-      .send("service_gpkyeng", "template_qgg4pin", data, "XHRxxVuzePZubZk48")
+      .send(
+        "service_gpkyeng",
+        "template_qgg4pin",
+        templateParams,
+        "XHRxxVuzePZubZk48"
+      )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setSubmitSuccess(true);
           reset();
+          setRecaptchaToken(null); // Reset reCAPTCHA token on success
         },
         (error) => {
           console.log("FAILED...", error);
           window.alert("ERROR! Could not send message. Please try again!");
           reset();
+          setRecaptchaToken(null); // Reset reCAPTCHA token on failure
         }
       );
   }
@@ -130,6 +149,13 @@ export function ContactForm() {
             placeholder="Your message goes here..."
           ></textarea>
           <p className="text-primary">{errors.body?.message}</p>
+        </div>
+        <div className="mb-4">
+          <ReCAPTCHA
+            sitekey="6LcOHv4pAAAAABVGYkwfmQX-5xBxRSHTiBy045H3" // Added reCAPTCHA component
+            onChange={(token) => setRecaptchaToken(token)}
+            onExpired={() => setRecaptchaToken(null)}
+          />
         </div>
         <div className="mt-4 text-center">
           <SecondaryButton label="Send" />

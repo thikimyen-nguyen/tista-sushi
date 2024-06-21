@@ -43,7 +43,7 @@ export function ContactForm() {
   function onSubmit(data) {
     if (!recaptchaToken) {
       // Check for reCAPTCHA token
-      window.alert("Please complete the reCAPTCHA");
+      window.alert("Please click to verify reCAPTCHA!");
       return;
     }
 

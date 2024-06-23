@@ -171,8 +171,8 @@ export function ContactCover() {
       <img src={image3} alt="sushi maki roll" className="w-56 md:w-80 animate-spin" />
       <div className="text-start">
       <p className="text-xl md:text-2xl text-orange text-start">Åpningstider:</p>
-      <p className="text-white md:text-xl">Man-Fre: <span>10:00 - 20:00</span></p>
-      <p className="text-white md:text-xl">Lørdag: <span>10:00 - 18:00</span></p>
+      <p className="text-white md:text-xl">Man-Fre: <span>10:00 - 19:30</span></p>
+      <p className="text-white md:text-xl">Lørdag: <span>09:00 - 17:30</span></p>
       <p className="text-white md:text-xl">Søndag: <span>Stengt</span></p>
 
       </div>

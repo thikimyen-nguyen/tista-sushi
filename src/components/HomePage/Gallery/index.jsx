@@ -1,6 +1,6 @@
 import Banner from "../../../assets/images/coverngang.jpg";
-// import { SecondaryButton } from "../../Buttons";
 import collage from "../../../assets/images/collage.webp";
+import { SecondaryButton } from "../../Buttons";
 
 export function Gallery() {
   return (
@@ -19,9 +19,9 @@ export function Gallery() {
             Fordyp deg i en uforglemmelig matopplevelse, hvor hver bit er en
             reise til hjertet av Japan!
           </p>
-          {/* <div className="text-center mt-20">
-            <SecondaryButton label="Online Order" />
-          </div> */}
+          <div className="text-center mt-20">
+            <SecondaryButton label="Online Bestilling" />
+          </div>
         </div>
       </div>
     </section>

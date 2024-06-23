@@ -168,9 +168,13 @@ export function ContactForm() {
 export function ContactCover() {
   return (
     <div className="h-56 sm:h-80 md:h-96 flex justify-center items-center my-10">
-      <img src={image3} alt="sushi maki roll" className="w-80 animate-spin" />
-      <div className="text-2xl text-orange font-styling text-start">
-        We love to hear from you!
+      <img src={image3} alt="sushi maki roll" className="w-56 md:w-80 animate-spin" />
+      <div className="text-start">
+      <p className="text-xl md:text-2xl text-orange text-start">Åpningstider:</p>
+      <p className="text-white md:text-xl">Man-Fre: <span>10:00 - 20:00</span></p>
+      <p className="text-white md:text-xl">Lørdag: <span>10:00 - 18:00</span></p>
+      <p className="text-white md:text-xl">Søndag: <span>Stengt</span></p>
+
       </div>
     </div>
   );

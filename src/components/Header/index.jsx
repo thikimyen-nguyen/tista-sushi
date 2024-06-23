@@ -1,20 +1,19 @@
-import { useState } from "react";
 import logo from "../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { PrimaryButton } from "../Buttons";
 
 export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
   function handleOrderButton() {
     window.location.href = "https://tista-sushi.orderintelligence.no/";
   }
   return (
-    <header className="text-white p-4 sticky top-0 bg-gray z-10 opacity-90 ">
+    <header className="text-white p-4 sticky top-0 bg-black z-10 opacity-90 ">
       <div className="  max-w-screen-xl mx-auto">
         <div className="flex justify-between">
           <Link to="/" className="self-center">
@@ -22,20 +21,20 @@ export function Header() {
           </Link>
           <div className="flex content-center">
             <div className="self-center">
-              <PrimaryButton label="ORDER NOW" onClick={handleOrderButton} />
+              <PrimaryButton label="bestill nå" onClick={handleOrderButton} />
             </div>
-            <nav>
+            {/* <nav>
               <ul className="p-4 hidden md:flex" id="navbar">
                
                 <li className="p-4 text-xl">
-                  <a href="#about">ABOUT US</a>
+                  <a href="#about">OM OSS</a>
                 </li>
                 <li className="p-4 text-xl">
-                  <a href="#contact">CONTACT</a>
+                  <a href="#contact">KONTAKT</a>
                 </li>
               </ul>
-            </nav>
-            <div className="md:hidden self-center">
+            </nav> */}
+            {/* <div className="md:hidden self-center">
               <button
                 onClick={toggleMenu}
                 className="text-white focus:outline-none"
@@ -55,24 +54,24 @@ export function Header() {
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
-      {isOpen && (
+      {/* {isOpen && (
         <nav className="w-fit fixed right-4 text-end">
           <ul className="md:hidden bg-black p-4 w-fit" id="navbar">
            
             <li className="p-4 text-xl">
-              <a href="#about">ABOUT US</a>
+              <a href="#about">OM OSS</a>
             </li>
             <li className="p-4 text-xl">
-              <a href="#contact">CONTACT</a>
+              <a href="#contact">KONTAKT</a>
             </li>
           </ul>
         </nav>
-      )}
+      )} */}
     </header>
   );
 }

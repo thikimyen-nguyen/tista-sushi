@@ -23,8 +23,8 @@ export function Intro() {
               />
             </svg>
           }
-          title="Fusion Flavor"
-          content="Creative rolls that blend traditional Japanese techniques with international flavors."
+          title="Fusjonssmak"
+          content="Kreative rundstykker som blander tradisjonelle japanske teknikker med internasjonale smaker."
         />
         <IntroCard
           icon={
@@ -44,8 +44,8 @@ export function Intro() {
               />
             </svg>
           }
-          title="Fresh Ingredients"
-          content="Commitment to using the freshest fish and produce."
+          title="Ferske ingredienser"
+          content="Forpliktelse til å bruke den ferskeste fisken og råvarene."
         />
         <IntroCard
           icon={
@@ -68,24 +68,24 @@ export function Intro() {
               </g>
             </svg>
           }
-          title="Vegetarian Options"
-          content="A variety of vegetable-based sushi rolls and dishes."
+          title="Vegetarisk alternativ"
+          content="En rekke grønnsaksbaserte sushiruller og retter."
         />
       </div>
       <div className="m-5 md:flex items-center " id="about">
         <div className="w-full xl:w-1/2 ">
-          <img src={imageB} alt="sushi roll maki" className="m-auto"/>
+          <img src={imageB} alt="sushi roll maki" className="m-auto" />
         </div>
-        <div className="text-center p-5" >
-          <h1 className="my-5">Crazy for Sushi!</h1>
+        <div className="text-center p-5">
+          <h1 className="my-5">Gal for Sushi!</h1>
           <p className="text-lg my-5 p-5 leading-9">
-            Step into a culinary adventure at Tista Sushi, where
-            quality is paramount and every detail is meticulously crafted.
-            Discover the finest specialties prepared with care and precision,
-            promising a dining experience you won't soon forget.
+            Gå inn i et kulinarisk eventyr på Tista Sushi, hvor kvalitet er
+            viktig og hver detalj er omhyggelig utformet. Oppdag fineste
+            spesialiteter tilberedt med omhu og presisjon, lovende en
+            matopplevelse du sent vil glemme.
           </p>
           <div className="my-5">
-            <SecondaryButton label="See our Menu" onClick={handleOrderButton}/>
+            <SecondaryButton label="Se vår meny" onClick={handleOrderButton} />
           </div>
         </div>
         <div className="w-full xl:w-1/2 text-center">

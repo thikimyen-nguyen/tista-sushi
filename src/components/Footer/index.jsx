@@ -1,16 +1,16 @@
 import logo from "../../assets/images/logo.webp";
-import { PrimaryButton } from "../Buttons";
+// import { PrimaryButton } from "../Buttons";
 export function Footer() {
-  function handleOrderButton() {
-    window.location.href = "https://tista-sushi.orderintelligence.no/";
-  }
+  // function handleOrderButton() {
+  //   window.location.href = "https://tista-sushi.orderintelligence.no/";
+  // }
   return (
     <footer className="text-center bg-gray text-white">
       <a href="/">
         {" "}
         <img src={logo} alt="holidaze logo" className="w-64 m-auto py-10" />
       </a>
-      <nav>
+      {/* <nav>
         <ul className="flex justify-center">
           <li className="p-4 hover:underline">
             <a href="#about">ABOUT US</a>
@@ -20,10 +20,10 @@ export function Footer() {
             <a href="#contact">CONTACT</a>
           </li>
         </ul>
-      </nav>
-      <PrimaryButton label="ORDER NOW" onClick={handleOrderButton} />
-      <div className=" flex justify-center my-5">
-        <div className="flex items-center p-2">
+      </nav> */}
+      {/* <PrimaryButton label="ORDER NOW" onClick={handleOrderButton} /> */}
+      <div >
+        <div className="flex items-center p-2 justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
@@ -37,7 +37,7 @@ export function Footer() {
           </svg>
           <a class="email" href="mailto:nt.sushi@hotmail.com" className="hover:underline">nt.sushi@hotmail.com</a>
         </div>
-        <div className="flex items-center p-2">
+        <div className="flex items-center p-2 justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"

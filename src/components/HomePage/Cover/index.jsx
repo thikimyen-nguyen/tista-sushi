@@ -2,7 +2,7 @@ import Banner from "../../../assets/images/cover.jpg";
 import "./index.css";
 import BannerTwo from "../../../assets/images/hinh3.webp";
 import image2 from "../../../assets/images/sushidishbgremove.png";
-import { SecondaryButton } from "../../Buttons";
+// import { SecondaryButton } from "../../Buttons";
 
 export function MainCover() {
   return (
@@ -20,21 +20,18 @@ export function MainCover() {
   );
 }
 export function CoverTwo() {
-  function handleOrderButton() {
-    window.location.href = "https://tista-sushi.orderintelligence.no/";
-  }
+  // function handleOrderButton() {
+  //   window.location.href = "https://tista-sushi.orderintelligence.no/";
+  // }
   return (
     <div className="relative h-screen">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${BannerTwo})` }}
       ></div>
-       <div className="absolute w-full top-10 flex items-center justify-center">
+      <div className="absolute w-full top-10 flex items-center justify-center">
         {" "}
-        <h1 className="my-5 text-center pt-36 ">
-          THE TASTE OF TRUE SUSHI!
-        </h1>
-       
+        <h1 className="my-5 text-center pt-36 ">SMAKEN AV EKTE SUSHI! </h1>
       </div>
       <div className="absolute inset-0 flex items-center justify-center top-44">
         <img
@@ -47,14 +44,13 @@ export function CoverTwo() {
       <div className="absolute w-full bottom-16 flex flex-col items-center justify-center">
         {" "}
         <p className="my-5 text-center">
-          Enjoy your favorite sushi from the comfort of your home with our easy
-          and convenient online ordering.
+          Nyt din favorittsushi hjemmefra med vår enkle og praktisk bestilling
+          på nett.
         </p>
-        <div className="text-center">
-          <SecondaryButton label="Order Now" onClick={handleOrderButton} />
-        </div>
+        {/* <div className="text-center">
+          <SecondaryButton label="Bestill Nå" onClick={handleOrderButton} />
+        </div> */}
       </div>
     </div>
   );
 }
-

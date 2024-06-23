@@ -83,14 +83,14 @@ export function ContactForm() {
 
   return (
     <div className="my-5 p-3">
-      <h1 className="text-center">Contact Us</h1>
+      <h1 className="text-center">kontakt oss</h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex-col md:w-2/4 content-center mx-auto"
       >
         <div className="mb-4">
           <label htmlFor="fullName" className="font-semibold">
-            Full Name
+            Navn
           </label>
           <input
             type="text"
@@ -108,7 +108,7 @@ export function ContactForm() {
             htmlFor="subject"
             className="block text-gray-600 font-semibold"
           >
-            Subject
+            Emne
           </label>
           <input
             type="text"
@@ -117,13 +117,13 @@ export function ContactForm() {
             className={`mt-1 p-2 text-black ${
               errors.subject ? "error-border" : "border-gray-300"
             } rounded w-full`}
-            placeholder="Your subject"
+            placeholder="Ditt emne"
           />
           <p className="text-primary">{errors.subject?.message}</p>
         </div>
         <div className="mb-4">
           <label htmlFor="email" className="block font-semibold">
-            Email
+            E-post
           </label>
           <input
             type="email"
@@ -138,7 +138,7 @@ export function ContactForm() {
         </div>
         <div className="mb-4">
           <label htmlFor="body" className="block font-semibold">
-            Your Message
+            Melding
           </label>
           <textarea
             id="body"
@@ -146,7 +146,7 @@ export function ContactForm() {
             className={`mt-1 p-2 text-black ${
               errors.body ? "error-border" : "border-gray-300"
             } rounded w-full`}
-            placeholder="Your message goes here..."
+            placeholder="Meldingen din går her..."
           ></textarea>
           <p className="text-primary">{errors.body?.message}</p>
         </div>
@@ -158,7 +158,7 @@ export function ContactForm() {
           />
         </div>
         <div className="mt-4 text-center">
-          <SecondaryButton label="Send" />
+          <SecondaryButton label="Sende" />
         </div>
       </form>
     </div>

@@ -8,8 +8,12 @@ export function Intro() {
   }
   return (
     <section>
-      <div className="bg-lightOrange flex flex-wrap justify-center py-32">
-        <IntroCard
+      <div className="bg-lightOrange text-primary text-xl text-center py-32">
+        <p className="md:w-1/2 p-5 mx-auto">
+          "Food is art, and you are the artist. Creat materpieces with love and
+          passion."
+        </p>
+        {/* <IntroCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +29,8 @@ export function Intro() {
           }
           title="Fusjonssmak"
           content="Kreative rundstykker som blander tradisjonelle japanske teknikker med internasjonale smaker."
-        />
-        <IntroCard
+        /> */}
+        {/* <IntroCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +50,8 @@ export function Intro() {
           }
           title="Ferske ingredienser"
           content="Forpliktelse til å bruke den ferskeste fisken og råvarene."
-        />
-        <IntroCard
+        /> */}
+        {/* <IntroCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,22 +74,23 @@ export function Intro() {
           }
           title="Vegetarisk alternativ"
           content="En rekke grønnsaksbaserte sushiruller og retter."
-        />
+        /> */}
       </div>
       <div className="m-5 md:flex items-center " id="about">
         <div className="w-full xl:w-1/2 ">
           <img src={imageB} alt="sushi roll maki" className="m-auto" />
         </div>
         <div className="text-center p-5">
-          <h1 className="my-5">Gal for Sushi!</h1>
-          <p className="text-lg my-5 p-5 leading-9">
-            Gå inn i et kulinarisk eventyr på Tista Sushi, hvor kvalitet er
-            viktig og hver detalj er omhyggelig utformet. Oppdag fineste
-            spesialiteter tilberedt med omhu og presisjon, lovende en
-            matopplevelse du sent vil glemme.
+          <p className="text-lg my-5 p-5 leading-9 lg:w-3/4 mx-auto">
+            På Tista Sushi er vi lidenskapelig glad i sushi. Her kan du får
+            oppleve kulinariske asiatiske fusion som gjør den tradisjonelle
+            sushi opplevelsen det lille ekstra. Reisen gjennom Asia fult opp
+            med. Vi lager autentisk og fersk sushi laget med kjærlighet og
+            kunnskap. Vi tilbyr en stor og spennende meny med alt fra spennende
+            smaker med nigri, maki, rolls, bowls og mye mer. Velkommen!
           </p>
           <div className="my-5">
-            <SecondaryButton label="Se vår meny" onClick={handleOrderButton} />
+            <SecondaryButton label="Meny" onClick={handleOrderButton} />
           </div>
         </div>
         <div className="w-full xl:w-1/2 text-center">

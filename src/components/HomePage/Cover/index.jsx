@@ -2,6 +2,7 @@ import Banner from "../../../assets/images/cover.jpg";
 import "./index.css";
 import BannerTwo from "../../../assets/images/hinh3.webp";
 import image2 from "../../../assets/images/sushidishbgremove.png";
+import { SecondaryButton } from "../../Buttons";
 // import { SecondaryButton } from "../../Buttons";
 
 export function MainCover() {
@@ -20,9 +21,9 @@ export function MainCover() {
   );
 }
 export function CoverTwo() {
-  // function handleOrderButton() {
-  //   window.location.href = "https://tista-sushi.orderintelligence.no/";
-  // }
+  function handleOrderButton() {
+    window.location.href = "https://tista-sushi.orderintelligence.no/";
+  }
   return (
     <div className="relative h-screen">
       <div
@@ -47,9 +48,9 @@ export function CoverTwo() {
           Nyt din favorittsushi hjemmefra med vår enkle og praktisk bestilling
           på nett.
         </p>
-        {/* <div className="text-center">
+        <div className="text-center">
           <SecondaryButton label="Bestill Nå" onClick={handleOrderButton} />
-        </div> */}
+        </div>
       </div>
     </div>
   );

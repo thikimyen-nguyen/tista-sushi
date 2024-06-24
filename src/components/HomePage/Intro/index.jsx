@@ -1,4 +1,3 @@
-import { IntroCard } from "./card";
 import { SecondaryButton } from "../../Buttons";
 import imageB from "../../../assets/images/removebg2.png";
 import imageC from "../../../assets/images/bgremove.png";

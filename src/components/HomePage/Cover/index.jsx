@@ -37,7 +37,7 @@ export function CoverTwo() {
       <div className="absolute inset-0 flex items-center justify-center top-44">
         <img
           src={image2}
-          alt="tista sushi maki roll"
+          alt="Tista sushi in halden Norway asian restaurant japanese cuisine"
           style={{ width: "400px" }}
           className="animate-zoomIn"
         />

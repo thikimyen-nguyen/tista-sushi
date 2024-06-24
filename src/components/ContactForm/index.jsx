@@ -168,7 +168,7 @@ export function ContactForm() {
 export function ContactCover() {
   return (
     <div className="h-56 sm:h-80 md:h-96 flex justify-center items-center my-10">
-      <img src={image3} alt="sushi maki roll" className="w-56 md:w-80 animate-spin" />
+      <img src={image3} alt="Tista sushi in halden Norway asian restaurant japanese cuisine" className="w-56 md:w-80 animate-spin" />
       <div className="text-start">
       <p className="text-xl md:text-2xl text-orange text-start">Åpningstider:</p>
       <p className="text-white md:text-xl">Man-Fre: <span>10:00 - 19:30</span></p>

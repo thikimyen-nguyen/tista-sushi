@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="text-center bg-gray text-white">
       <a href="/">
         {" "}
-        <img src={logo} alt="holidaze logo" className="w-64 m-auto py-10" />
+        <img src={logo} alt="logo of Tista sushi in halden Norway asian restaurant japanese cuisine" className="w-64 m-auto py-10" />
       </a>
       {/* <nav>
         <ul className="flex justify-center">

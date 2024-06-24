@@ -78,7 +78,7 @@ export function Intro() {
       </div>
       <div className="m-5 md:flex items-center " id="about">
         <div className="w-full xl:w-1/2 ">
-          <img src={imageB} alt="sushi roll maki" className="m-auto" />
+          <img src={imageB} alt="Tista sushi in halden Norway asian restaurant japanese cuisine" className="m-auto" />
         </div>
         <div className="text-center p-5">
           <p className="text-lg my-5 p-5 leading-9 lg:w-3/4 mx-auto">
@@ -94,7 +94,7 @@ export function Intro() {
           </div>
         </div>
         <div className="w-full xl:w-1/2 text-center">
-          <img src={imageC} alt="sushi roll maki" className="m-auto" />
+          <img src={imageC} alt="Tista sushi in halden Norway asian restaurant japanese cuisine" className="m-auto" />
         </div>
       </div>
     </section>

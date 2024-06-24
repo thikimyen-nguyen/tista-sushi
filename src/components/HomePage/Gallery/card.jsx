@@ -8,7 +8,7 @@ export function GalleryCard({imageUrl, name}) {
       >
         <img
           src={imageUrl}
-          alt="tista sushi maki roll"
+          alt="Tista sushi in halden Norway asian restaurant japanese cuisine"
           className="w-full h-48 object-cover object-center group-hover:opacity-75 flex-shrink-0"
         />
       </div>

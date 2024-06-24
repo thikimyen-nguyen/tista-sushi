@@ -6,7 +6,7 @@ export function Gallery() {
   return (
     <section>
       <div className="flex lg:w-3/4 mx-auto my-10">
-        <img src={collage} alt="tista sushi maki nigiri roll" />
+        <img src={collage} alt="Tista sushi in halden Norway asian restaurant japanese cuisine" />
       </div>
       <div className="relative h-screen">
         <div

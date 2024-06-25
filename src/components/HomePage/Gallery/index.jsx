@@ -3,6 +3,8 @@ import collage from "../../../assets/images/collage.webp";
 import { SecondaryButton } from "../../Buttons";
 
 export function Gallery() {
+  function handleOrderButton() {
+    window.open("https://tista-sushi.orderintelligence.no/", "_blank");  }
   return (
     <section>
       <div className="flex lg:w-3/4 mx-auto my-10">
@@ -20,7 +22,7 @@ export function Gallery() {
             reise til hjertet av Japan!
           </p>
           <div className="text-center mt-20">
-            <SecondaryButton label="Online Bestilling" />
+            <SecondaryButton label="Online Bestilling" onClick={handleOrderButton} />
           </div>
         </div>
       </div>

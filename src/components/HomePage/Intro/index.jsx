@@ -3,8 +3,7 @@ import imageB from "../../../assets/images/removebg2.png";
 import imageC from "../../../assets/images/bgremove.png";
 export function Intro() {
   function handleOrderButton() {
-    window.location.href = "https://tista-sushi.orderintelligence.no/";
-  }
+    window.open("https://tista-sushi.orderintelligence.no/", "_blank");  }
   return (
     <section>
       <div className="bg-lightOrange text-primary text-xl text-center py-32">

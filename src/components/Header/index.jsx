@@ -10,7 +10,7 @@ export function Header() {
   //   setIsOpen(!isOpen);
   // };
   function handleOrderButton() {
-    window.location.href = "https://tista-sushi.orderintelligence.no/";
+    window.open("https://tista-sushi.orderintelligence.no/", "_blank");    
   }
   return (
     <header className="text-white p-4 sticky top-0 bg-black z-10 opacity-90 ">

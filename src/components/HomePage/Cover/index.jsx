@@ -22,7 +22,8 @@ export function MainCover() {
 }
 export function CoverTwo() {
   function handleOrderButton() {
-    window.open("https://tista-sushi.orderintelligence.no/", "_blank");  }
+    window.open("https://tista-sushi.orderintelligence.no/", "_blank");
+  }
   return (
     <div className="relative h-screen">
       <div

@@ -1,7 +1,6 @@
-import { PrimaryButton, SecondaryButton } from "../../Buttons";
+import { SecondaryButton } from "../../Buttons";
 import imageB from "../../../assets/images/removebg2.png";
 import imageC from "../../../assets/images/bgremove.png";
-import coverTea from "../../../assets/images/tea.png";
 export function Intro() {
   function handleOrderButton() {
     window.open("https://tista-sushi.orderintelligence.no/", "_blank");

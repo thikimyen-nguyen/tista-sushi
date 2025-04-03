@@ -27,7 +27,7 @@ export function MainCover() {
 
         {/* Add 'flex' and positioning to make flex layout work */}
         <div className="absolute flex flex-col lg:flex-row px-6 lg:p-24 items-center justify-between w-full h-full">
-          <div className="text-left flex-1 pt-10 lg:pt-24">
+          <div className="text-left flex-1 pt-10 lg:pt-24 ">
             <h1
               className="text-6xl md:text-8xl md:ps-24 font-bold text-transparent bg-clip-text animate-rainbow font-styling transition-all ease-in-out"
               style={{
@@ -51,7 +51,7 @@ export function MainCover() {
           <div className="flex flex-col justify-center flex-1 bg-white/2 backdrop-blur-md rounded-xl border border-white/30 shadow-lg ring-1 ring-white/20 md:p-10">
             <div>
               <h2 className="font-styling text-center text-4xl xl:text-6xl">
-                Bubble Tea{" "}
+                Boble Te{" "}
                 <span className="text-white lowercase"> er her på</span>
               </h2>
               <div className="mx-auto lg:pt-16 w-2/3 lg:w-full">

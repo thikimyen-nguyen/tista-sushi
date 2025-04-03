@@ -29,7 +29,7 @@ export function MainCover() {
         <div className="absolute flex flex-col lg:flex-row p-24 items-center justify-between w-full h-full">
           <div className="text-left flex-1">
             <h1
-              className="text-8xl md:ps-24 font-bold text-transparent bg-clip-text animate-rainbow font-styling transition-all ease-in-out"
+              className="text-6xl md:text-8xl md:ps-24 font-bold text-transparent bg-clip-text animate-rainbow font-styling transition-all ease-in-out"
               style={{
                 transform: "rotate(-20deg)", // tilted counter-clockwise
                 display: "inline-block", // needed to apply transform properly

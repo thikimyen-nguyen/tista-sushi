@@ -26,8 +26,8 @@ export function MainCover() {
         ></div>
 
         {/* Add 'flex' and positioning to make flex layout work */}
-        <div className="absolute flex flex-col lg:flex-row p-24 items-center justify-between w-full h-full">
-          <div className="text-left flex-1">
+        <div className="absolute flex flex-col lg:flex-row px-6 lg:p-24 items-center justify-between w-full h-full">
+          <div className="text-left flex-1 pt-10 lg:pt-24">
             <h1
               className="text-6xl md:text-8xl md:ps-24 font-bold text-transparent bg-clip-text animate-rainbow font-styling transition-all ease-in-out"
               style={{
@@ -43,18 +43,18 @@ export function MainCover() {
               Nyhet!
             </h1>
 
-            <div className="flex justify-center">
+            <div className="mx-auto w-3/5 lg:w-full">
               <img src={imageTea} alt="teaology tista sushi halden" />
             </div>
           </div>
 
-          <div className="flex flex-col justify-center flex-1 bg-white/2 backdrop-blur-md rounded-xl border border-white/30 shadow-lg ring-1 ring-white/20 p-10">
+          <div className="flex flex-col justify-center flex-1 bg-white/2 backdrop-blur-md rounded-xl border border-white/30 shadow-lg ring-1 ring-white/20 md:p-10">
             <div>
               <h2 className="font-styling text-center text-4xl xl:text-6xl">
                 Bubble Tea{" "}
                 <span className="text-white lowercase"> er her på</span>
               </h2>
-              <div className="flex justify-center pt-16">
+              <div className="mx-auto lg:pt-16 w-2/3 lg:w-full">
                 <img src={teaLogo} alt="teaology tista sushi halden" />
               </div>
             </div>

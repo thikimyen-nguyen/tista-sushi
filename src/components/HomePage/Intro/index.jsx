@@ -6,15 +6,15 @@ export function Intro() {
   function handleOrderButton() {
     window.open("https://tista-sushi.orderintelligence.no/", "_blank");
   }
-  function handleOrderTeaButton() {
-    window.open(
-      "https://tista-teaology.orderintelligence.no/no/welcome",
-      "_blank"
-    );
-  }
+  // function handleOrderTeaButton() {
+  //   window.open(
+  //     "https://tista-teaology.orderintelligence.no/no/welcome",
+  //     "_blank"
+  //   );
+  // }
   return (
     <section>
-      <div className="relative mx-auto my-24 lg:my-72 w-fit">
+      {/* <div className="relative mx-auto my-24 lg:my-72 w-fit">
         <img
           src={coverTea}
           alt="Tista milk tea in halden Norway asian restaurant japanese cuisine"
@@ -22,7 +22,7 @@ export function Intro() {
         <div className="absolute bottom-4 right-10 lg:bottom-1/4 lg:right-1/4">
           <PrimaryButton label="Bestill her" onClick={handleOrderTeaButton} />
         </div>
-      </div>
+      </div> */}
 
       <div className="m-5 md:flex items-center my-24 lg:my-60 " id="about">
         <div className="w-full xl:w-1/2 ">

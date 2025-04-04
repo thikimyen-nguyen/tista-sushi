@@ -11,12 +11,12 @@ import { PrimaryButton, SecondaryButton } from "../../Buttons";
 // import { SecondaryButton } from "../../Buttons";
 
 export function MainCover() {
-  function handleOrderTeaButton() {
-    window.open(
-      "https://tista-teaology.orderintelligence.no/no/welcome",
-      "_blank"
-    );
-  }
+  // function handleOrderTeaButton() {
+  //   window.open(
+  //     "https://tista-teaology.orderintelligence.no/no/welcome",
+  //     "_blank"
+  //   );
+  // }
   return (
     <section>
       <div className="relative h-screen mb-24">
@@ -54,15 +54,16 @@ export function MainCover() {
                 Boble Te{" "}
                 <span className="text-white lowercase"> er her på</span>
               </h2>
-              <div className="mx-auto lg:pt-16 w-2/3 lg:w-full">
+              <div className="m-auto lg:pt-16 w-2/3 lg:w-full">
                 <img src={teaLogo} alt="teaology tista sushi halden" />
               </div>
             </div>
 
             <div className="text-center mt-20">
               <PrimaryButton
-                label="Bestill Online"
-                onClick={handleOrderTeaButton}
+                label="Kommer snart 10.04.2025"
+                disabled={true}
+                // onClick={handleOrderTeaButton}
               />
             </div>
           </div>

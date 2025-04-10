@@ -11,12 +11,12 @@ import { PrimaryButton, SecondaryButton } from "../../Buttons";
 // import { SecondaryButton } from "../../Buttons";
 
 export function MainCover() {
-  // function handleOrderTeaButton() {
-  //   window.open(
-  //     "https://tista-teaology.orderintelligence.no/no/welcome",
-  //     "_blank"
-  //   );
-  // }
+  function handleOrderTeaButton() {
+    window.open(
+      "https://tista-teaology.orderintelligence.no/no/welcome",
+      "_blank"
+    );
+  }
   return (
     <section>
       <div className="relative h-screen mb-24">
@@ -61,9 +61,8 @@ export function MainCover() {
 
             <div className="text-center mt-20">
               <PrimaryButton
-                label="Kommer snart 10.04.2025"
-                disabled={true}
-                // onClick={handleOrderTeaButton}
+                label="Bestill TeaOlogy"
+                onClick={handleOrderTeaButton}
               />
             </div>
           </div>

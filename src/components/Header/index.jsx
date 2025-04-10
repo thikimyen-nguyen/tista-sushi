@@ -1,7 +1,7 @@
 import logo from "../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 import "./index.css";
-import { PrimaryButton } from "../Buttons";
+import { PrimaryButton, SecondaryButton } from "../Buttons";
 
 export function Header() {
   // const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +12,12 @@ export function Header() {
   function handleOrderButton() {
     window.open("https://tista-sushi.orderintelligence.no/", "_blank");
   }
-  // function handleOrderTeaButton() {
-  //   window.open(
-  //     "https://tista-teaology.orderintelligence.no/no/welcome",
-  //     "_blank"
-  //   );
-  // }
+  function handleOrderTeaButton() {
+    window.open(
+      "https://tista-teaology.orderintelligence.no/no/welcome",
+      "_blank"
+    );
+  }
   return (
     <header className="text-white p-4 sticky top-0 bg-black z-10 opacity-90 ">
       <div className="   mx-auto">
@@ -30,17 +30,14 @@ export function Header() {
             />
           </Link>
           <div className="flex content-center">
-            {/* <div className="self-center mr-4">
+            <div className="self-center mr-4">
               <SecondaryButton
                 label="TEAOLOGY"
                 onClick={handleOrderTeaButton}
               />
-            </div> */}
+            </div>
             <div className="self-center">
-              <PrimaryButton
-                label="Bestill Sushi"
-                onClick={handleOrderButton}
-              />
+              <PrimaryButton label="Sushi" onClick={handleOrderButton} />
             </div>
             {/* <nav>
               <ul className="p-4 hidden md:flex" id="navbar">

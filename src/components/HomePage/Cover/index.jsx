@@ -7,16 +7,16 @@ import image2 from "../../../assets/images/sushidishbgremove.png";
 import imageTea from "../../../assets/images/teasample.png";
 import teaLogo from "../../../assets/images/logo (1).png";
 
-import { PrimaryButton, SecondaryButton } from "../../Buttons";
+import { SecondaryButton } from "../../Buttons";
 // import { SecondaryButton } from "../../Buttons";
 
 export function MainCover() {
-  function handleOrderTeaButton() {
-    window.open(
-      "https://tista-teaology.orderintelligence.no/no/welcome",
-      "_blank"
-    );
-  }
+  // function handleOrderTeaButton() {
+  //   window.open(
+  //     "https://tista-teaology.orderintelligence.no/no/welcome",
+  //     "_blank"
+  //   );
+  // }
   return (
     <section>
       <div className="relative h-screen mb-24">
@@ -59,12 +59,12 @@ export function MainCover() {
               </div>
             </div>
 
-            <div className="text-center mt-20">
+            {/* <div className="text-center mt-20">
               <PrimaryButton
                 label="Bestill TeaOlogy"
                 onClick={handleOrderTeaButton}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

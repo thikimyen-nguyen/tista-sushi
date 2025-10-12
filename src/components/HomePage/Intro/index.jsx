@@ -41,7 +41,7 @@ export function Intro() {
             smaker med nigri, maki, rolls, bowls og mye mer. Velkommen!
           </p>
           <div className="my-5">
-            <SecondaryButton label="Sushi Meny" onClick={handleOrderButton} />
+            <SecondaryButton label="Se Meny" onClick={handleOrderButton} />
           </div>
         </div>
         <div className="w-full xl:w-1/2 text-center">

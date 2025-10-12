@@ -9,14 +9,13 @@ export default function HomePageContent() {
     <div>
       <MainCover />
       <Intro />
-      <CoverTwo />
-      <Gallery />
+      {/* <CoverTwo /> */}
+      {/* <Gallery /> */}
       <div id="contact">
         <ContactCover />
         <ContactForm />
       </div>
       <QRCode />
-
     </div>
   );
 }

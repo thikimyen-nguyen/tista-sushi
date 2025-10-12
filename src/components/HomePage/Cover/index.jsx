@@ -19,20 +19,19 @@ export function MainCover() {
   // }
   return (
     <section>
-      <div className="relative h-screen mb-24">
+      {/* <div className="relative h-screen mb-24">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: `url(${BannerThree})` }}
         ></div>
 
-        {/* Add 'flex' and positioning to make flex layout work */}
         <div className="absolute flex flex-col lg:flex-row px-6 lg:p-24 items-center justify-evenly w-full h-full">
           <div className=" flex flex-col justify-center text-center pt-10 lg:pt-24 ">
             <h1
               className="text-6xl md:text-8xl md:ps-24 font-bold text-transparent bg-clip-text animate-rainbow font-styling transition-all ease-in-out"
               style={{
-                transform: "rotate(-20deg)", // tilted counter-clockwise
-                display: "inline-block", // needed to apply transform properly
+                transform: "rotate(-20deg)", 
+                display: "inline-block", 
                 backgroundImage:
                   "linear-gradient(90deg, #ff9aa2, #ffb347, #fdfd96, #a1e891, #87cefa, #b39ddb, #f49ac2)",
                 backgroundSize: "200% auto",
@@ -59,15 +58,10 @@ export function MainCover() {
               </div>
             </div>
 
-            {/* <div className="text-center mt-20">
-              <PrimaryButton
-                label="Bestill TeaOlogy"
-                onClick={handleOrderTeaButton}
-              />
-            </div> */}
+           
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="relative h-56 sm:h-80 md:h-96 overflow-hidden">
         <div
